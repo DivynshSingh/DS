@@ -1,4 +1,5 @@
 #include<iostream>
+using namespace std;
 struct Node{
 int data;
 Node* link;
@@ -62,14 +63,19 @@ i--;
 int main(){
     // Node* head=(Node*)malloc(sizeof(Node));//not recommended in cpp this part caused some problme earlier too, would not reverse LL correctly
     Node* head=new Node(0);
-    Node* it=head;
+    Node* it=head; //"it" keeps track of last node, which helps in appending element at end with o(1) complexity
     add(&head, it, 1);
     add(&head, it, 2);
     add(&head, it, 3);
     add(&head, it, 4);
+    cout<<"Original list: ";
     show(head);
+    cout<<endl;
     reverse(&head);
+    cout<<"Reversed list: ";
     show(head);
+    cout<<endl;
+    cout<<"Reversing the list again: ";
     reverse(head);
     show(head);
     return 0;

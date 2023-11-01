@@ -3,62 +3,62 @@ XX 2.palindrome check
 XX 3.insertion and deletion in array at user defined location
 XX 4.insertion and deletion at beginning 
 XX 5.insertion and deletion at end
-(Specify overflow and underflow)
-6. linear search using switch case
-7. Binary search using switch case
-8. Bubble sort 
-9. Selection sort
-10. Insertion sort
-11. Quick sort
-12. Merge sort
-13. Heap sort
-14. Floor, ceil, peak, minimum in sorted rotated array
-15. Sparse matrix representation and operations 
-16. Link list insertion and deletion at beginning
-17. Link list insertion and deletion at end
-18. Link list insertion and deletion at a position 
-19. Link list searching and printing
-20. Link list reversing II
-21. Merge point of two given link list
-22. Link list cycle detection and removal
-23. Implement circular link list
-24. Implement doubly link list
-25. Find middle element of link list in o(n) time
-26. Merge two sorted link list 
-27.check if link list is palindrome or not
-28. Program to find Nth node from the end of a link list
-29. Stack implementation using array.
-30. Stack implementation using link list
-31. Queue implementation using array 
-32. Queue implementation using link list
-33. Rain water trapping Program 
-34. Minimum element in stack in constant space
-35. Prefix representation
-36. Postfix representation 
-37. Rotten oranges
-38. Implement queue using stack
-39. First negative integer in every window of size k
-40. Next greater to right, next greater to left, nearest smaller to left, next smaller to right
-41. Tower of hanoi
-42. Create a binary tree
-43. Preorder traversal of binary tree
-44. Post order traversal
-45. Inorder traversal
-46. Find height of binary tree
-47. Diameter of binary tree
-48. Lowest common ancestor 
-49. Top view of binary tree
-50. Bottom view of binary tree
-51. Left view of binary tree
-52. Right view of binary tree
-53. Creation of binary search tree insertion
-54. Creation of bst deletion 
-55. Searching in a binary search tree
-56. Converting preorder from post order
-57. Converting post order from pre order
-58. Avl tree creation insertion 
-59. Avl tree deletion 
-60. Binary expression tree
-61. Create a graph 
-62. Bfs
-63. Dfs
+     (Specify overflow and underflow)
+XX 6. linear search using switch case
+XX 7. Binary search using switch case
+XX 8. Bubble sort 
+XX 9. Selection sort
+XX 10. Insertion sort
+XX 11. Quick sort
+XX 12. Merge sort
+XX 13. Heap sort
+XX 14. Floor, ceil, peak, minimum in sorted rotated array
+XX 15. Sparse matrix representation and operations
+XX 16. Link list insertion and deletion at beginning
+XX 17. Link list insertion and deletion at end
+XX 18. Link list insertion and deletion at a position 
+XX 19. Link list searching and printing
+XX 20. Link list reversing II
+XX 21. Merge point of two given link list
+XX 22. Link list cycle detection and removal
+XX 23. Implement circular link list
+XX 24. Implement doubly link list
+XX 25. Find middle element of link list in o(n) time
+XX 26. Merge two sorted link list 
+XX 27.check if link list is palindrome or not
+XX 28. Program to find Nth node from the end of a link list
+XX 29. Stack implementation using array.
+XX 30. Stack implementation using link list
+XX 31. Queue implementation using array 
+XX 32. Queue implementation using link list
+XX 33. Rain water trapping Program 
+XX 34. Minimum element in stack in constant space
+XX 35. Prefix representation
+XX 36. Postfix representation
+XX 37. Rotten oranges
+XX 38. Implement queue using stack
+XX 39. First negative integer in every window of size k
+XX 40. Next greater to right, next greater to left, nearest smaller to left, next smaller to right
+XX 41. Tower of hanoi
+XX 42. Create a binary tree
+XX 43. Preorder traversal of binary tree
+XX 44. Post order traversal
+XX 45. Inorder traversal
+XX 46. Find height of binary tree
+XX 47. Diameter of binary tree
+XX 48. Lowest common ancestor
+XX 49. Top view of binary tree
+XX 50. Bottom view of binary tree
+XX 51. Left view of binary tree
+XX 52. Right view of binary tree
+XX 53. Creation of binary search tree insertion
+XX 54. Creation of bst deletion 
+XX 55. Searching in a binary search tree
+XX 56. Converting preorder from post order
+XX 57. Converting post order from pre order
+XX 58. Avl tree creation insertion
+XX 59. Avl tree deletion
+XX 60. Binary expression tree
+XX 61. Create a graph 
+XX 62. Bfs
+XX 63. Dfs

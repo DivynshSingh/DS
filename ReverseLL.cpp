@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 struct Node {
     int data;
     Node* next;
@@ -23,10 +23,10 @@ Node* reverseList(Node* head) {
 void displayList(Node* head) {
     Node* current = head;
     while (current != nullptr) {
-        std::cout << current->data << " ";
+        cout << current->data << " ";
         current = current->next;
     }
-    std::cout << std::endl;
+    cout<<endl;
 }
 
 int main() {
@@ -39,12 +39,12 @@ int main() {
         head = newNode;
     }
 
-    std::cout << "Original List: ";
+    cout<<"Original List: ";
     displayList(head);
 
-    head = reverseList(head);
+    head=reverseList(head);
 
-    std::cout << "Reversed List: ";
+    cout<<"Reversed List: ";
     displayList(head);
 
     Node* current = head;

@@ -5,8 +5,12 @@ using namespace std;
 
 
 class Solution {
+vector<vector<int>> grid;
 public:
-    int orangesRotting(vector<vector<int>>& grid) {
+    void make(vector<vector<int>> vec){
+        grid=vec;
+    }
+    int orangesRotting() {
         int min=0,last=0;
         int m=grid.size(),n=grid[0].size();
             
@@ -67,10 +71,14 @@ public:
     }
 };
 int main(){
-    Solution S;
+    Solution S1;
     vector<vector<int>> v1={{2,1,1},{1,1,0},{0,1,1}};
-    vector<vector<int>> v2={{2,1,1},{0,1,1},{1,0,1}};
+    S1.make(v1);
     
-    cout<<S.orangesRotting(v1)<<endl;//4
-    cout<<S.orangesRotting(v2)<<endl;//-1
+    Solution S2;
+    vector<vector<int>> v2={{2,1,1},{0,1,1},{1,0,1}};
+    S2.make(v2);
+    
+    cout<<S1.orangesRotting()<<endl;//4
+    cout<<S2.orangesRotting()<<endl;//-1
 }

@@ -1,14 +1,13 @@
 #include <iostream>
 using namespace std;
+
 struct Node {
     int data;
     Node* next;
     Node* prev;
 };
 
-Node* head = nullptr;
-
-void insertAtPosition(int value, int position) {
+void insertAtPosition(Node*& head, int value, int position) {
     if (position < 0) return;
 
     Node* newNode = new Node;
@@ -37,7 +36,7 @@ void insertAtPosition(int value, int position) {
     current->next = newNode;
 }
 
-void deleteAtPosition(int position) {
+void deleteAtPosition(Node*& head, int position) {
     if (position < 0 || head == nullptr) return;
     if (position == 0) {
         Node* temp = head;
@@ -61,25 +60,27 @@ void deleteAtPosition(int position) {
     delete temp;
 }
 
-void displayList() {
-    Node* current=head;
+void show(Node* head) {
+    Node* current = head;
     while (current != nullptr) {
-        cout<<current->data << " ";
-        current=current->next;
+        cout << current->data << " ";
+        current = current->next;
     }
-    cout<<endl;
+    cout << endl;
 }
 
 int main() {
-    insertAtPosition(1, 0);
-    insertAtPosition(2, 1);
-    insertAtPosition(3, 2);
+    Node* head = nullptr;
+    insertAtPosition(head, 1, 0);
+    insertAtPosition(head, 2, 1);
+    insertAtPosition(head, 3, 2);
+    insertAtPosition(head, 4, 0);
 
-    displayList();
+    show(head);
 
-    deleteAtPosition(1);
+    deleteAtPosition(head, 1);
 
-    displayList();
+    show(head);
 
     return 0;
 }

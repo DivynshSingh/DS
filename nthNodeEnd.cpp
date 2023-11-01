@@ -43,14 +43,21 @@ void printNthNode(Node* head, int n) {
     }
 
 }
-
+void show(Node* head) {
+    Node* current=head;
+    while(current!=nullptr) {
+        cout<<current->data << " ";
+        current=current->next;
+    }
+    cout<<endl;
+}
 int main() {
     Node* head = nullptr;
 
     for (int i = 1; i <= 5; i++) {
         insertAtEnd(head, i);
     }
-
+    show(head);
     int n;
     cout << "Enter the value of n: ";
     cin >> n;

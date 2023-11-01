@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 struct Node {
     int data;
     Node* next;
@@ -55,7 +55,7 @@ void displayList(Node* head) {
         std::cout << current->data << " ";
         current = current->next;
     }
-    std::cout << std::endl;
+    cout << endl;
 }
 
 int main() {
@@ -72,6 +72,8 @@ int main() {
 
     Node* mergedList = mergeListsSorted(list1, list2);
 
+    displayList(list1);
+    displayList(list2);
     displayList(mergedList);
 
     return 0;
