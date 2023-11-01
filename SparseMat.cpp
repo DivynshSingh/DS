@@ -30,36 +30,16 @@ vector<Entry> addSparseMatrices(vector<Entry>& a, vector<Entry>& b) {
  while (j < b.size()) r.push_back(b[j++]);
  return r;
 }
-
-vector<Entry> multiplySparseMatrices(vector<Entry>& a, vector<Entry>& b, int ra, int cb) {
-    vector<Entry> r;
-
- for (int i = 0; i < ra; i++)
-     for (int j = 0; j < cb; j++) {
-         int s = 0;
-
-         for(int k = 0; k < a.size(); k++)
-             if (a[k].r == i)
-                 for (int l = 0; l < b.size(); l++)
-                     if (b[l].c == j && a[k].c == b[l].r)
-                         s += a[k].v * b[l].v;
-
-         if(s != 0) r.push_back({i, j, s});
-     }
- return r;
-}
-
-vector<Entry> transposeSparseMatrix(vector<Entry>& a, int ca) {
-    vector<Entry> r;
-
-    for (int j = 0; j < ca; j++)
-        for (int k = 0; k < a.size(); k++)
-            if (a[k].c == j) r.push_back({a[k].c, a[k].r, a[k].v});
-
+vector<int> vec(int a[],int n){
+    vector<int> r;
+    for(int i=0;i<n;i++){
+        r.push_back(a[i]);
+    }
     return r;
 }
 
 int main() {
+
  vector<Entry> a = {{0, 0, 1}, {1, 2, 2}, {2, 3, 3}};
  vector<Entry> b = {{0, 0, 4}, {1, 2, 5}, {2, 3, 6}};
  int ra = 3, ca = 4, cb = 4;
@@ -71,10 +51,6 @@ int main() {
 
  cout<< "addition of the two matrices is: " <<endl;
  printSparseMatrix(addSparseMatrices(a, b));
- cout<< "Multiplication of the two matrices is: " <<endl;
- printSparseMatrix(multiplySparseMatrices(a, b, ra, cb));
- cout<< "transpose of matrix 1 is: " <<endl;
- printSparseMatrix(transposeSparseMatrix(a, ca));
 
  return 0;
 }
